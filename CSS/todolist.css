@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital@1&display=swap');
+*,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+header {
+    height: 10%;
+    width: 100%;
+}
+
+header form {
+    display: flex;
+    justify-content: flex-end;
+}
+
+header button {
+    font-weight: bold;
+    height: 50px;
+    width: 200px;
+    background-color: red;
+}
+
+body {
+    background: linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%);
+}
+
+body section {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Balsamiq Sans', cursive;
+    background-color: rgba(22, 26, 43, 1);
+    border-radius: 10px;
+    position: relative;
+    top: 20%;
+    left: 35%;
+    border: solid black;
+    height: 500px;
+    width: 450px;
+}
+
+body section h1 {
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    height: auto;
+}
+
+body section #erreur {
+    height: 10px;
+    text-align: center;
+    font-size: 20px;
+}
+
+body section .form {
+    display: flex;
+    justify-content: center;
+    height: auto;
+    margin-bottom: 25px;
+    margin-top: 30px;
+}
+
+body section form {
+    width: 65%;
+}
+
+body section form .form-int {
+    font-family: 'Balsamiq Sans', cursive;
+    display: flex;
+    height: auto;
+}
+
+body section form input,
+button {
+    font-family: 'Balsamiq Sans', cursive;
+    margin: 0;
+    outline: none;
+    border: none;
+    color: white;
+}
+
+body section form input {
+    text-align: center;
+    font-weight: bold;
+    border-radius: 10px 0 0 10px;
+    border-style: solid;
+    border-width: 2px;
+    border-image: linear-gradient(90deg, #d592ff 0%, #515ada 100%) 1;
+    border-image-outset: 0;
+    background: none;
+    font-size: 15px;
+    height: 40px;
+}
+
+body section form button {
+    height: 44px;
+    width: 80px;
+    border-radius: 0 10px 10px 0;
+    background: #FC466B;
+    cursor: pointer;
+}
+
+body section .full-todo {
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+}
+
+.full-todo::-webkit-scrollbar {
+    width: 8px;
+}
+
+.full-todo::-webkit-scrollbar-track {
+    background-color: none;
+}
+
+.full-todo::-webkit-scrollbar-thumb {
+    border-radius: 25px;
+    background-color: #85FFBD;
+}
+
+body section .full-todo .todo {
+    display: flex;
+    border-radius: 5px;
+    height: 45px;
+    min-height: 45px;
+    /* max-height: 45px; */
+    margin-bottom: 10px;
+    color: white;
+    background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
+}
+
+body section .todo .text {
+    display: flex;
+}
+
+body section .todo div p {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+
+body section .full-todo .todo .symbol {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+    width: 30%;
+}
+
+section .full-todo .todo .symbol button {
+    align-items: center;
+    /* width: 0; */
+}
+
+section .full-todo .todo .symbol button[name="delete"] {
+    background: rgb(224, 92, 92);
+}
+
+section .full-todo .todo .symbol button[name="edit"] {
+    background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
+}
+
+section .full-todo .todo .symbol button img {
+    filter: brightness(0) invert(1);
+    align-items: center;
+    cursor: pointer;
+    height: 20px;
+    width: 20px;
+    pointer-events: none;
+}
